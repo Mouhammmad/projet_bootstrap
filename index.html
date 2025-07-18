@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,46 +14,18 @@
     }
   </style>
 </head>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function() {
-    emailjs.init("w_1Mxb63lQP1Hmpnz"); // ← Remplace par ta vraie clé
-  })();
-
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    console.log("Formulaire soumis !");
-
-    emailjs.sendForm('service_j4ioylq', 'template_5ejhjnj', this)
-      .then(function() {
-        alert("Message envoyé avec succès !");
-      }, function(error) {
-        alert("Erreur : " + error.text);
-      });
-  });
-</script>
-<body>
-
-  <!-- Thème sombre -->
-  <div class="text-end p-3">
+<body>  <!-- Thème sombre -->  <div class="text-end p-3">
     <button class="btn btn-sm btn-dark" onclick="toggleTheme()">🌙 Mode sombre</button>
-  </div>
-
-  <!-- Profil -->
-  <div class="container text-center mt-3">
+  </div>  <!-- Profil -->  <div class="container text-center mt-3">
     <img src="tapha.jpg" alt="Photo de profil" class="profile-img mb-3">
     <h1 class="text-primary">MOUSTAPHA BALDE</h1>
-    <p class="lead">Développeur Web Junior | Passionné par le code</p>
+    <p class="lead">Développeur Web Junior | Passionné par le code</p><div class="mt-3">
+  <a href="images/cv.pdf" download class="btn btn-primary">📄 Télécharger mon CV</a>
+  <a href="#" class="btn btn-outline-primary ms-2">LinkedIn</a>
+  <a href="#" class="btn btn-outline-dark ms-2">GitHub</a>
+</div>
 
-    <div class="mt-3">
-      <a href="images/cv.pdf" download class="btn btn-primary">📄 Télécharger mon CV</a>
-      <a href="#" class="btn btn-outline-primary ms-2">LinkedIn</a>
-      <a href="#" class="btn btn-outline-dark ms-2">GitHub</a>
-    </div>
-  </div>
-
-  <!-- Compétences -->
-  <div class="container mt-5">
+  </div>  <!-- Compétences -->  <div class="container mt-5">
     <h3 class="text-center mb-4">Compétences</h3>
     <div class="row text-center">
       <div class="col-md-4">
@@ -70,10 +41,7 @@
         <p>Création rapide d’interfaces modernes</p>
       </div>
     </div>
-  </div>
-
-  <!-- Projets -->
-  <div class="container mt-5">
+  </div>  <!-- Projets -->  <div class="container mt-5">
     <h3 class="text-center mb-4">Mes projets</h3>
     <div class="row">
       <div class="col-md-4 mb-4">
@@ -85,84 +53,65 @@
             <a href="#" class="btn btn-outline-primary">Voir plus</a>
           </div>
         </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Projet 2">
-          <div class="card-body">
-            <h5 class="card-title">Projet 2</h5>
-            <p class="card-text">Application To-Do List avec JavaScript pur.</p>
-            <a href="#" class="btn btn-outline-primary">Voir plus</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Projet 3">
-          <div class="card-body">
-            <h5 class="card-title">Projet 3</h5>
-            <p class="card-text">Portfolio en ligne avec Bootstrap 5.</p>
-            <a href="#" class="btn btn-outline-primary">Voir plus</a>
-          </div>
-        </div>
+      </div><div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Projet 2">
+      <div class="card-body">
+        <h5 class="card-title">Projet 2</h5>
+        <p class="card-text">Application To-Do List avec JavaScript pur.</p>
+        <a href="#" class="btn btn-outline-primary">Voir plus</a>
       </div>
     </div>
   </div>
 
-  <!-- Contact -->
-  <div class="container mt-5">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Projet 3">
+      <div class="card-body">
+        <h5 class="card-title">Projet 3</h5>
+        <p class="card-text">Portfolio en ligne avec Bootstrap 5.</p>
+        <a href="#" class="btn btn-outline-primary">Voir plus</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>  <!-- Contact -->  <div class="container mt-5">
     <h3 class="text-center mb-4">Contact</h3>
     <form id="contact-form">
-  <div class="mb-3">
-    <label for="nom" class="form-label">Nom</label>
-    <input type="text" class="form-control" id="nom" name="name" required>
-  </div>
-  <div class="mb-3">
-    <label for="email" class="form-label">Adresse email</label>
-    <input type="email" class="form-control" id="email" name="email" required>
-  </div>
-  <div class="mb-3">
-    <label for="message" class="form-label">Message</label>
-    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Envoyer</button>
-</form>
-
-  <!-- Footer -->
-  <footer class="bg-light text-center p-4 mt-5">
+      <div class="mb-3">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="nom" name="nom" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Adresse email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div>
+      <div id="form-status"></div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+  </div>  <!-- Footer -->  <footer class="bg-light text-center p-4 mt-5">
     <p>&copy; 2025 MOUSTAPHA BALDE. Tous droits réservés.</p>
-  </footer>
+  </footer>  <!-- Scripts Bootstrap + EmailJS + Thème -->  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>  <script>
+    emailjs.init("w_1Mxb63IQP1Hmpnz");
 
-  <!-- Scripts Bootstrap + EmailJS + Thème -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    // Activer EmailJS
-    (function(){
-      emailjs.init("w_1Mxb63IQP1Hmpnz"); // <- Remplace par ta clé publique
-    })();
-
-    // Envoi du formulaire
-    document.getElementById("contact-form").addEventListener("submit", function(e) {
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
-      const params = {
-        nom: document.getElementById("nom").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-      };
+      console.log("Formulaire soumis !");
 
-      emailjs.send("service_j4ioylq", "template_ynapaq9", params)
-        .then(() => {
-          document.getElementById("form-status").innerHTML = <div class="alert alert-success">Message envoyé !</div>;
-          this.reset();
-        }, () => {
-          document.getElementById("form-status").innerHTML = <div class="alert alert-danger">Erreur lors de l'envoi.</div>;
+      emailjs.sendForm('service_j4ioylq', 'template_5ejhjnj', this)
+        .then(function() {
+          document.getElementById("form-status").innerHTML = '<div class="alert alert-success">Message envoyé avec succès !</div>';
+          document.getElementById("contact-form").reset();
+        }, function(error) {
+          document.getElementById("form-status").innerHTML = '<div class="alert alert-danger">Erreur : ' + error.text + '</div>';
         });
     });
 
-    // Thème sombre
     function toggleTheme() {
       document.body.classList.toggle("bg-dark");
       document.body.classList.toggle("text-white");
